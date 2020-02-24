@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_template2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/DarkAccent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp"
+        android:layout_width="120dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_main_gridtemp2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dummy_img" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.35"
+            android:background="@drawable/grad_bgp" />
+
+        <TextView
+            android:id="@+id/tv_subHead_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/exo_2_medium"
+            android:text="Movie | 4K"
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_head_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="6dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/exo_2_semibold"
+        android:maxLines="2"
+        android:text="Movie Name"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

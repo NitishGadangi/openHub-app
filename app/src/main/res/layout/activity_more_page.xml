@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkAccent"
+    tools:context=".MorePage">
+
+    <Button
+        android:id="@+id/img_home_btm"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/home_btm_nav_dull"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_search_btm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/img_search_btm"
+        android:background="@drawable/btm_nav_search_dull"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_down_btm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_home_btm" />
+
+    <Button
+        android:id="@+id/img_down_btm"
+        android:background="@drawable/btm_nav_liv_dull"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_more_btm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_search_btm" />
+
+    <Button
+        android:id="@+id/img_more_btm"
+        android:background="@drawable/btm_nav_more"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_down_btm" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/exo_black"
+        android:text="More"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:srcCompat="@drawable/main_loader_logo" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:alpha="0.80"
+        android:fontFamily="@font/exo_2_semibold"
+        android:text="@string/about_page"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:alpha="0.75"
+        android:fontFamily="@font/exo_2_semibold"
+        android:text="Maintained by Mr. Black Turban"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:alpha="0.75"
+        android:clickable="true"
+        android:fontFamily="@font/exo_2_semibold"
+        android:onClick="nitish_me"
+        android:text="@string/nitish"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_down_btm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textew24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/exo_black"
+                android:text="Settings"
+                android:textColor="@color/RedAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViw25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="downloads"
+                android:text="Downloads"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tetView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:onClick="downloads"
+                android:text="/Downloads/VIDFLIX"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/rar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="apps"
+                android:text="Check out our other apps"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/eae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:onClick="apps"
+                android:text="Amazing apps from our developers"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/qaq"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/exo_black"
+                android:text="APP"
+                android:textColor="@color/RedAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:text="Version"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:text="0.1 Beta"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/aaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="copyrights"
+                android:text="Copyright"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/aaad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:onClick="copyrights"
+                android:text="Copyright @VIDFLIX All rights reserved"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sssa"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/ddd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="changelog"
+                android:text="Changelog"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/sds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:onClick="changelog"
+                android:text="checkout whats new"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textVi"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="checkUpdates"
+                android:text="Check for updates"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/extView27"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/xtView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="termsPolicies"
+                android:text="Terms and Policies"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/texView27"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/bb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/exo_black"
+                android:text="Get in touch with us"
+                android:textColor="@color/RedAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/zz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="website"
+                android:text="vidflix.net"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:onClick="website"
+                android:text="visit our website"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/kk"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/hh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="telegram"
+                android:text="Telegram"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:onClick="telegram"
+                android:text="Join to report issues and Request a feature"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aa"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/pp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="email"
+                android:text="Write us @"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/uu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:onClick="email"
+                android:text="support@vidflix.net"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/rr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2_semibold"
+                android:onClick="team"
+                android:text="Our Team"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/ee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:alpha="0.80"
+                android:clickable="true"
+                android:fontFamily="@font/exo_2"
+                android:onClick="team"
+                android:text="want to know about our Team"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/qq"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

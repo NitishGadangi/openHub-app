@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">VIDFLIX</string>
+
+    <string name="bak_json">nitish.vidflix1_bak_json</string>
+    <string name="json_bolly_movies_home">nitish.vidflix1_bolly_movies_home</string>
+    <string name="json_holly_movies_home">nitish.vidflix1_holly_movies_home</string>
+    <string name="json_dubbed_movies_home">nitish.vidflix1_dubbed_movies_home</string>
+    <string name="json_punjabi_movies_home">nitish.vidflix1_punjabi_movies_home</string>
+    <string name="json_kids_movies_home">nitish.vidflix1_kids_movies_home</string>
+    <string name="json_marvel_movies_home">nitish.vidflix1_marvel_movies_home</string>
+    <string name="json_anime_movies_home">nitish.vidflix1_anime_movies_home</string>
+    <string name="json_series_home">nitish.vidflix1_bolly_series_home</string>
+    <string name="json_allmovies">nitish.vidflix1_bolly_allmovies</string>
+    <string name="json_categories">nitish.vidflix1_categories</string>
+    <string name="json_categories_thriller">nitish.vidflix1_categories_thriller</string>
+    <string name="json_categories_romance">nitish.vidflix1_categories_romance</string>
+    <string name="json_categories_mystery">nitish.vidflix1_categories_mystery</string>
+    <string name="json_categories_horror">nitish.vidflix1_categories_horror</string>
+    <string name="json_categories_fantasy">nitish.vidflix1_categories_fantasy</string>
+    <string name="json_categories_family">nitish.vidflix1_categories_drama</string>
+    <string name="json_categories_documentary">nitish.vidflix1_categories_documentary</string>
+    <string name="json_categories_crime">nitish.vidflix1_categories_crime</string>
+    <string name="json_categories_comedy">nitish.vidflix1_categories_comedy</string>
+    <string name="json_categories_action">nitish.vidflix1_categories_action</string>
+    <string name="json_categories_animation">nitish.vidflix1_categories_animation</string>
+    <string name="json_categories_adult">nitish.vidflix1_categories_adult</string>
+    <string name="json_categories_adventure">nitish.vidflix1_categories_adventure</string>
+
+    <string name="pref_updater_main">nitish.vidflix1_updater_src</string>
+    <string name="pref_updater_bool">nitish.vidflix1_updater_src_bool</string>
+    <string name="pref_updater_log">nitish.vidflix1_updater_src_change_log</string>
+    <string name="pref_updater_url">nitish.vidflix1_updater_src_url</string>
+
+    <string name="about_page">A non-profitable idea to help people</string>
+    <string name="nitish">Designed and Developed by <u>Nitish</u></string>
+
+    <string name="ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting, remaining essentially
+        unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting, remaining essentially
+        unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting, remaining essentially
+        unchanged</string>
+
+</resources>
