@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_btn_nav"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_liveTv"
+        android:icon="@drawable/ic_live_tv"
+        android:title="Live Tv" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/btm_nav_search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/btm_nav_more"
+        android:title="More" />
+
+</menu>

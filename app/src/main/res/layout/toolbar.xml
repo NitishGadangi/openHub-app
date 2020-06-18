@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/toolbar"
+    tools:context=".Activity.InitActivity"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:background="@color/DarkAccent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/AppTheme" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/btBack"
+                    android:onClick="onToolbarBackPressed"
+                    android:src="@drawable/left_arrow"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:fontFamily="@font/exo_black"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@id/btBack"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:id="@+id/title"
+                    android:textSize="24sp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:progress="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

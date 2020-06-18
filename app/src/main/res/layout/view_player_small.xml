@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/playerView"
+    android:layout_height="250dp">
+<!--    <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_width="match_parent">-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@color/shimmer" />-->
+<!--    </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/dummy_img"
+        android:scaleType="fitXY"
+        android:id="@+id/img_thumbnail"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:src="@drawable/exo_icon_circular_play"
+        android:tint="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_height="50dp"/>
+</RelativeLayout>

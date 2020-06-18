@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton android:id="@id/exo_play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="#CC000000"
+        style="@style/ExoMediaButton.Play"/>
+
+    <ImageButton android:id="@id/exo_pause"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#CC000000"
+        style="@style/ExoMediaButton.Pause"/>
+
+    <ImageView
+        android:id="@+id/settings"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:tint="@color/RedAccent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_settings" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_alignParentBottom="true"
+       android:background="@color/DarkAccent"
+       android:layout_height="wrap_content">
+       <com.google.android.exoplayer2.ui.DefaultTimeBar
+           android:id="@id/exo_progress"
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           app:scrubber_color="@color/RedAccent"
+           app:buffered_color="@color/RedAccent"
+           android:background="#CC000000" />
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/exo_position"
+               android:layout_alignParentLeft="true"
+               android:textColor="@color/RedAccent"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/exo_duration"
+               android:layout_alignParentRight="true"
+               android:textColor="@color/RedAccent"
+               android:layout_height="wrap_content"/>
+       </RelativeLayout>
+   </LinearLayout>
+</RelativeLayout>

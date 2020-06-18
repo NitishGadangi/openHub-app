@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        compileOptions {
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
+    implementation 'com.takisoft.fix:preference-v7:28.0.0.0'
+    implementation project(path: ':velocity')
+    implementation "io.reactivex.rxjava3:rxjava:3.0.0-RC3"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+}

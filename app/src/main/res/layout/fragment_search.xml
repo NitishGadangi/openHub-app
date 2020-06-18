@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="24dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/DarkAccent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.SearchFragment">
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:id="@+id/search"
+        android:background="@drawable/bg_search"
+        app:queryHint="Search Movies,Series or Channels"
+        android:layout_height="60dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layoutAnimation="@anim/layout_animation_2"
+        android:layout_width="match_parent"
+        android:id="@+id/rv_search_data"
+        android:layout_height="match_parent"/>
+</LinearLayout>

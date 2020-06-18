@@ -1,56 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nitish.vidflix1">
+    package="net.vidflix">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".Premium_List"></activity>
-        <activity android:name=".premium_viu1" />
-        <activity android:name=".WebDisplay" />
-        <activity android:name=".MorePage" />
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".LiveTvPage"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".StreamPlayer"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="sensorLandscape" />
-        <activity
-            android:name=".Search"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".Loader">
+            android:name=".MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".InfoPage"
-            android:screenOrientation="portrait" />
-        <activity android:name=".DispMoreCategories1" />
-        <activity android:name=".MainActivity" />
+            android:name=".Activity.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+        <activity android:name=".Activity.MoviesActivity"/>
+        <activity android:name=".Activity.PlayerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activity.SeriesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.MoviesDetailsActivity" android:launchMode="singleTop"/>
+        <activity android:name=".Activity.VootListingActivity" android:launchMode="singleTop"/>
     </application>
 
 </manifest>

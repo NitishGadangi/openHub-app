@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/DarkAccent"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <TextView
+        style="?android:attr/spinnerItemStyle"
+        android:singleLine="true"
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:ellipsize="marquee"
+        android:textAlignment="inherit"/>
+    <ImageView
+        android:id="@+id/icon"
+        android:drawableLeft="@drawable/ic_arrow_drop_down"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"/>
+
+</RelativeLayout>

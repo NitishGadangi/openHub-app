@@ -7,4 +7,9 @@
     <color name="LightAccent">#000000</color>
     <color name="RedAccent">#CA2128</color>
     <color name="MatteBlack">#1B1B1B</color>
+    <color name="demo_dark_transparent">#24000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#BA272727</color>
+    <color name="shimmer">#61756D6D</color>
 </resources>
