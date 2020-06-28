@@ -1,5 +1,5 @@
 > .
-> This Project has been Deprecated
+> This Project has been Deprecated and servers no longer maintained
 > .
 
 ⚠️   Due to few reasons, the latest source code of this is not available here publicly.
